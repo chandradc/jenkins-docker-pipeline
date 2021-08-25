@@ -6,10 +6,10 @@ pipeline {
   stages {
     stage('Test') {
        environment {
-         HOME="."
+         WORKSPACE="."
        }
       steps {
-        bat 'node --version'
+       sh 'node --version'
       }
     }
   }
