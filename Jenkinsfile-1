@@ -9,7 +9,7 @@ pipeline {
          HOME="."
        }
       steps {
-        sh 'node --version'
+        bat 'node --version'
       }
     }
   }
