@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Test') {
        environment {
-         WORKSPACE="."
+         WORKSPACE="/C/Users/chand"
        }
       steps {
        sh 'node --version'
