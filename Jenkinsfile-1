@@ -1,8 +1,11 @@
 
 
 pipeline {
+  environment{
+    MSYS_NO_PATHCONV=1 
+  }
   agent {
-  MSYS_NO_PATHCONV=1 docker { image 'node:16-alpine' }
+      docker { image 'node:16-alpine' }
   }
   stages {
     stage('Test') {
